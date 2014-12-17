@@ -27,7 +27,7 @@ cp %{SOURCE1001} .
 
 ln -s unix/Makefile Makefile
 %build
-make CFLAGS="-D_LARGEFILE64_SOURCE" linux_noasm LF2="" %{?_smp_mflags}
+make -f unix/Makefile generic %{?_smp_mflags}
 
 %install
 
