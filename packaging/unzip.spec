@@ -1,7 +1,7 @@
 Name:           unzip
 Version:        6.0
 Release:        9
-License:        BSD
+License:        BSD-2.0
 Summary:        A utility for unpacking zip files
 Url:            http://www.info-zip.org/pub/infozip/UnZip.html
 Group:          Applications/Archiving
