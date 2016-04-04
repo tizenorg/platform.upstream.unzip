@@ -27,6 +27,9 @@ cp %{SOURCE1001} .
 
 ln -s unix/Makefile Makefile
 %build
+export CFLAGS+=" -fvisibility=hidden"
+  export CXXFLAGS+=" -fvisibility=hidden"
+  
 make -f unix/Makefile generic %{?_smp_mflags}
 
 %install
